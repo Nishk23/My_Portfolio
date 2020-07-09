@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    
+.content {
+  padding: 0 18px;
+  font-size: 20px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.collapsible {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 25px;
+}
+
+    
+.box {
+  background-color: white;
+  width: 1100px;
+  height: 200px;
+  border: 3px solid black;
+  padding: 50px;
+  margin: 20px;
+}
+
+.but{
+    position: absolute;
+    top: 107%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.b{
+    border: 5px solid black;
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none;
+    margin: 2px 2px;
+    transition: 0.6s ease;
+}
+
+.b:hover{
+    background-color: black;
+    color: white; 
+}
+        
+.cer1{
+    position: absolute;
+    top: 24.6%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.c1{
+    border: 3px solid black;
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none;
+    margin: 2px 2px;
+    transition: 0.6s ease;
+}
+
+.c1:hover{
+    background-color: black;
+    color: white; 
+}
+
+.cer2{
+    position: absolute;
+    top: 28.3%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.c2{
+    border: 3px solid black;
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none;
+    margin: 2px 2px;
+    transition: 0.6s ease;
+}
+
+.c2:hover{
+    background-color: black;
+    color: white; 
+}
+        
+.cer3{
+    position: absolute;
+    top: 31.9%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.c3{
+    border: 3px solid black;
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none;
+    margin: 2px 2px;
+    transition: 0.6s ease;
+}
+
+.c3:hover{
+    background-color: black;
+    color: white; 
+}
+        
+.cer4{
+    position: absolute;
+    top: 35.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.c4{
+    border: 3px solid black;
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none;
+    margin: 2px 2px;
+    transition: 0.6s ease;
+}
+
+.c4:hover{
+    background-color: black;
+    color: white; 
+}
+        
+.cer5{
+    position: absolute;
+    top: 39.2%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.c5{
+    border: 3px solid black;;
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none;
+    margin: 2px 2px;
+    transition: 0.6s ease;
+}
+
+.c5:hover{
+    background-color: black;
+    color: white; 
+}
+        
+.cer6{
+    position: absolute;
+    top: 42.8%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.c6{
+    border: 3px solid black;
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none;
+    margin: 2px 2px;
+    transition: 0.6s ease;
+}
+
+.c6:hover{
+    background-color: black;
+    color: white; 
+}
+        
+.cer7{
+    position: absolute;
+    top: 46.4%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.c7{
+    border: 3px solid black;
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none;
+    margin: 2px 2px;
+    transition: 0.6s ease;
+}
+
+.c7:hover{
+    background-color: black;
+    color: white; 
+}
+    
+.proo{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+}
+
+.p2{
+    
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+    margin: 2px 2px;
+    transition: 0.6s ease;
+}
+
+.p2:hover{
+    background-color: black;
+    color: white; 
+}
+    
+.pro{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.p1{
+    
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+    margin: 2px 2px;
+    transition: 0.6s ease;
+}
+
+.p1:hover{
+    background-color: black;
+    color: white; 
+}
+    
+.intern{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.it{
+    
+    padding: 15px 30px;
+    color: black;
+    text-decoration: none;
+    margin: 1px 1px;
+    transition: 0.6s ease;
+}
+
+.it:hover{
+    background-color: black;
+    color: white; 
+}
+    
+</style>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>My Portfolio</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);" data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu" id="portfolio-perfect-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="#hero">Home</a></li>
+                        <li class="page-scroll"><a href="#about">About</a></li>
+                        <li class="page-scroll"><a href="#service">Service</a></li>
+                        <li class="page-scroll"><a href="#portfolio">Projects</a></li>
+                        <li class="page-scroll"><a href="#contact">Contact</a></li>
+                        
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+
+    <div id="hero" class="hero">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <br><br><br>
+                    <h1>Nishanth Narayanan</h1>
+                    <div class="page-scroll">
+                        <p class="job-title" style="font-size: 30px">Data Analyst</p>
+                        <a href="#contact" class="btn btn-fill ">Hire me</a>
+                        <div class="clearfix visible-xxs"></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#about" class="btn btn-border">Explore more</a>
+                    </div>
+                </div>
+            
+                <div class="col-md-6 text-right">
+                    <img src="assets/img/myslef.jpg" alt="alex-vidal">
+                </div>
+
+            </div>
+        </div>
+    </div><!-- /.hero -->
+
+    <main id="main" class="site-main">
+
+        <section id="about" class="site-section section-about text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h2>About</h2>
+                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                        <p style="text-align: justify; font-size: 23px">Hello! I'm Nishanth, a talented, ambitious, and hardworking individual, with broad skills and prior knowledge in analytical area to suit up with Business Analytics and Data Science. Furthermore, I am adept at handling multiple tasks daily competently and at working well under pressure. Currently, I am pursuing B.E in Computer Science & Engineering, from St.Joseph's College of Engineering, Chennai</p>
+                        <div class="but">
+                            <a href="resume.pdf" class="b" target="_blank" download>Download my cv</a></div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-about -->
+
+        <section class="site-section section-skills">
+            <div class="container">
+                <div class="text-center">
+                    <h3>My Skills</h3>
+                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Python</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="100"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Data Analysis</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Tableau</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="90"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div>
+                        <div class="skill">
+                            <h4>SQL</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="95"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>C</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Data Science</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="75"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Power BI</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div>
+                        <div class="skill">
+                            <h4>Databases</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Java</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="50"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Data Visualization</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Machine Learning</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div>
+                        <div class="skill">
+                            <h4>HTML5/CSS/JS</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="90"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div>
+                    </div>
+                </div>
+                
+                <br><br><br><br>
+                <div class="text-center">
+                    <h3>Certifications</h3>
+                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                </div>
+                
+                <div class="box">
+                    <p style="font-size: 20px">Completed the course ‘IBM Data Science Specialization’ by COURSERA - Online Certification.</p>
+                </div>
+                <div class="cer1">
+                        <a href="https://drive.google.com/file/d/1MIL0BGtIWqDroYs78eAOg0t7ovGiHvgo/view?usp=sharing" class="c1"><strong>view certificate</strong></a>
+                </div>
+                
+                <div class="box">
+                    <p style="font-size: 20px">Completed the course ‘Data Analytics for Decision Making' by FUTURE LEARN - Online Certification.</p>
+                </div>
+                <div class="cer2">
+                        <a href="https://drive.google.com/file/d/1HXoA30HHDsSrKSLcBpqRqVhkR3h0O8G8/view?usp=sharing" class="c2"><strong>view certificate</strong></a>
+                </div>
+                
+                <div class="box">
+                    <p style="font-size: 20px">Completed the course ‘Python for Data Science’ by IBM COGNITIVE CLASS - Online Certification.</p>
+                </div>
+                <div class="cer3">
+                        <a href="https://drive.google.com/file/d/17cEObSoOZSpmf_oHe1JLikmqh-eHBlhW/view?usp=sharing" class="c3"><strong>view certificate</strong></a>
+                </div>
+                
+                <div class="box">
+                    <p style="font-size: 20px">Completed the course ‘MICROSOFT Engineering: Undergraduate and Masters’ by INSIDE SHERPA - Online Certification.</p>
+                </div>
+                <div class="cer4">
+                        <a href="https://drive.google.com/file/d/1jwmUogq5eqkdRghfxKH6aoGFO38Iqb19/view?usp=sharing" class="c4"><strong>view certificate</strong></a>
+                </div>
+                
+                <div class="box">
+                    <p style="font-size: 20px">Completed the course ‘TABLEAU Desktop and Prep’ by TABLEAU - Online Certification.</p>
+                </div>
+                <div class="cer5">
+                        <a href="https://drive.google.com/file/d/1ew-Kd-pg-Adl0liiVRtNOegn4vkABzad/view?usp=sharing" class="c5"><strong>view certificate</strong></a>
+                </div>
+                
+                <div class="box">
+                    <p style="font-size: 20px">Completed the course ‘Master Data Management for Beginners’ by TCS-ION - Online Certification.</p>
+                </div>
+                <div class="cer6">
+                        <a href="https://drive.google.com/file/d/1Y4_PZ1P5u51y8ppnQVU0f5iObHSrkh9I/view?usp=sharing" class="c6"><strong>view certificate</strong></a>
+                </div>
+                
+                <div class="box">
+                    <p style="font-size: 20px">Completed the course ‘Big Data and Hadoop’ by UDEMY - Online Certification.</p>
+                </div>
+                <div class="cer7">
+                        <a href="https://drive.google.com/file/d/16onH0eJlKTJr6qakI4mD_mGdzuukc7A6/view?usp=sharing" class="c7"><strong>view certificate</strong></a>
+                </div>
+            </div>
+        </section><!-- /.secton-skills -->
+        
+        
+
+        <section id="service" class="site-section section-services overlay text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Internships</h3>
+                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/front-end.svg" alt="Front End Developer">
+                            <h4>CodeBind Technologies, Chennai</h4>
+                            <h6><b>MAY 2019 – JUNE 2019</b></h6>
+                            <h6><b>( Front-end and Back-end )</b></h6>
+                            <br>
+                            <p style="text-align: justify">Learned about the fundamental scripting skills to look for in a web developer training program which includes HTML, CSS, and Javascript. Also, I got an idea for hot programming skills for back-end web development positions including PHP, XML, and SQL.</p>
+                        </div><!-- /.service -->
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/back-end.svg" alt="Back End Developer">
+                            <h4>National Small Industries Corporation Ltd, Chennai</h4>
+                            <h6><b>NOVEMBER 2018</b></h6>
+                            <h6><b>( IoT )</b></h6>
+                            <p style="text-align: justify">Learned how to control all the electronic devices to function automatically through the internet. The main purpose of Internet-connected devices has been to enable communication with each other and to access online data and processes.</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service">
+                            <img src="assets/img/consultancy.svg" alt="Coding">
+                            <h4>Cavins Solution, Chennai</h4>
+                            <h6><b>MAY 2018 – JUNE 2018</b></h6>
+                            <h6><b>( ARDUINO )</b></h6>
+                            <br><br>
+                            <p style="text-align: justify">Learned how to time things using Millis() instead of Delay() so we can free the processors to do things. Also, I learned how to define tasks as state machines that can execute independently of other state machines at the same time.</p>
+                        </div><!-- /.service -->
+                    </div>
+                    
+                    <div class="intern">
+                        <br>
+                        <a style="font-size: 30px" href="https://drive.google.com/file/d/1AQvN5QbOY20uJnOXjOe_x_aYdvqdrmXN/view?usp=sharing" class="it"><strong>VERIFY</strong></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section><!-- /.secton-services -->
+
+        <section id="portfolio" class="site-section section-portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h3>My recent Works</h3>
+                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/tweet.png" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Twitter Sentiment Analysis</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <a href="https://github.com/Nishk23/Twitter-Sentiment-Analysis"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/1human.jpg" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Human Activity Recognition</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <a href="https://github.com/Nishk23/Human-Activity-Recognition-Analysis"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/a.jpg" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Assistance for Blind using ML</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <a href="https://drive.google.com/file/d/1YDCB4O2FOng4ARaN66EW-61MooHp6hvr/view?usp=sharing"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/parkinson.jpg" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Detecting Parkinson's Disease</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem4"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <a href="https://github.com/Nishk23/Detecting-Parkinson-s-Disease"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/covid.png" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>COVID-19 India Visualization</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem5"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <a href="https://public.tableau.com/profile/nishanth2305#!/vizhome/Covid-19projectView-1/Coviddetails?publish=yes"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/website.png" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>World's Website Traffic Trends</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem6"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <a href="https://public.tableau.com/profile/nishanth2305#!/vizhome/Websitetraffictrends/TrafficTrends?publish=yes"><span class="glyphicon glyphicon-link"></span></a>
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-portfolio -->
+
+        <section class="site-section section-counters text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <p class="counter start" data-to="18" data-speed="2000">0</p>
+                        <h4>Technical Badges</h4>
+                    </div>
+                    <div class="proo">
+                        <a href="https://www.youracclaim.com/users/nishanth-n.468d805b/badges" class="p2"><strong>view badges</strong></a>
+                    </div>
+                    
+                    <div class="col-sm-4 col-xs-12">
+                        <p class="counter start" data-to="15" data-speed="2000">0</p>       
+                        <h4>Projects Delivered</h4>      
+                    </div>
+                    <div class="pro">
+                        <a href="https://github.com/Nishk23?tab=repositories" class="p1"><strong>view projects</strong></a>
+                    </div>
+                    
+                    <div class="col-sm-4 col-xs-12">
+                        <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
+                        <h4>Seconds on this site!<br>What are you waiting for?</h4>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-counters -->
+
+        <section id="contact" class="site-section section-services overlay text-center">
+            <div class="container">
+                <div class="row">
+<div id="contact">
+<h2>Get in Touch</h2>
+                        <br><br>
+                    
+<div id="contact-form">
+<button type="but" class="collapsible">ADDRESS</button>
+<div class="content">
+  <p><br>B-702, Sarvam Apartments, 200ft Radial Road, Pallikaranai, Chennai-600100, Tamil Nadu, India</p>
+</div><br><br>
+<button type="button" class="collapsible">PHONE NUMBER</button>
+<div class="content">
+  <p><br>+91 9962814640<br>+91 7200452665</p>
+</div><br><br>
+<button type="button" class="collapsible">E-MAIL ME</button>
+    
+<div class="content"> 
+  <p><br>Have a touch <a href="mailto:nishanthnishk2020@gmail.com" style="color:red">WITH ME ?</a></p>
+    </div></div>
+
+       
+        <!-- End #contact-form -->
+    </div>
+                </div>
+            </div>
+        </section><!-- /.secton-services -->
+        
+    </main><!-- /#main -->
+
+    <footer id="colophon" class="site-footer">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <a class="icon facebook-bg" href="https://www.linkedin.com/in/nishanth-narayanan-bbb12a18b/"><i class="icon-facebook"></i></a>
+                    <a class="icon twitter-bg" href="https://twitter.com/home"><i class="icon-twitter"></i></a>
+                    <a class="icon gplus-bg" href="https://www.linkedin.com/in/nishanth-narayanan-bbb12a18b/"><i class="icon-linkedin"></i></a>
+                    
+                </div>
+                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3"><p class="copyright">Copyright © 2020 Nishanth</p></div>
+                <div class="col-sm-4 col-xs-3">
+                    <div class="text-right page-scroll">
+                        <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- /#footer -->
+
+    <!-- Modals -->
+    <div id="portfolioItem1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="assets/img/portfolio-1.jpg" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Twitter Sentiment Analysis</h4>
+            <p>Used and compare various different methods for sentiment analysis on tweets (a text classification problem). The training datasets is expected to be a CSV file of type tweet_id, sentiment, tweet where the tweet_id is a unique integer identifying the tweet, the sentiment is either 1 (positive) or 0 (negative). The aim of this project is to develop a functional classifier for accurate and automatic sentiment classification of an unknown tweet stream and found that the Gradient Boosting Classifier performed the best on predicting the user’s activity by the precision of 92%.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/Nishk23/Twitter-Sentiment-Analysis" class="btn btn-fill">View Project</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="assets/img/portfolio-2.jpg" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Human Activity Recognition Analysis</h4>
+            <p>In this project, calculate a model by which a smartphone can detect its owner’s activity precisely. For the datasets, 30 people were used to perform 6 different activities. Using the sensor’s data we need to predict a user’s activity. After preparing the datasets and doing some machine learning methods, found that the random forest method performed the best on predicting the user’s activity by the precision of 87%.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/Nishk23/Human-Activity-Recognition-Analysis" class="btn btn-fill">View Project</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="assets/img/portfolio-3.jpg" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Assistance for Visual Impaired using ML</h4>
+            <p>This project is proposed to help those people who are visually impaired. Using Machine Learning algorithms, it is possible to extend the support given to them with visual impairment. With the recent advances in ML technology, used Eigenfaces, Fisherfaces, and Local Binary Patterns Histograms algorithms to develop assistance. It will be an efficient way in which blind people can also interact with the environment and utilize the facilities of the technology.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://drive.google.com/file/d/1YDCB4O2FOng4ARaN66EW-61MooHp6hvr/view?usp=sharing" class="btn btn-fill">View Report</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem4" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="assets/img/portfolio-4.jpg" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Detecting Parkinson's Disease</h4>
+            <p>In this Python machine learning project, using the Python libraries scikit-learn, numpy, pandas, and xgboost, building a model using an XGBClassifier. Load the data, get the features and labels, scale the features, then split the dataset, build an XGBClassifier, and then calculate the accuracy of the model.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/Nishk23/Detecting-Parkinson-s-Disease" class="btn btn-fill">View Project</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem5" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="assets/img/portfolio-5.jpg" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">COVID-19 India Visualization</h4>
+            <p>Coronaviruses are a large family of viruses which may cause illness in animals or humans. In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19 - World Health Organization. The number of new cases are increasing day by day around the world. This dataset has information from the states and union territories of India at daily level. So, created various views from the data to make a viz for the users to interact and get easy understanding.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://public.tableau.com/profile/nishanth2305#!/vizhome/Covid-19projectView-1/Covidcases?publish=yes" class="btn btn-fill">View Viz</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem6" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+            <img class="img-res" src="assets/img/portfolio-6.jpg" alt="">
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">World's Website Traffic Trends</h4>
+            <p>Whether you're running a special-interest blog or a global e-commerce giant, analyzing web traffic can help you optimize results. Connected directly with Google Analytics, this dashboard shows a website's traffic trends by country, section visited, and number of visits in a given time period. Visualize the breakdown of exits, bounces, and conversions to understand user behavior.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://public.tableau.com/profile/nishanth2305#!/vizhome/Websitetraffictrends/PageMetrics?publish=yes" class="btn btn-fill">View Viz</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>
+    
+</body>
+</html>
